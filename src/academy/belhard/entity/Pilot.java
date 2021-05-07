@@ -1,13 +1,13 @@
 package academy.belhard.entity;
 
-public class Pilots {
+public class Pilot {
     private int id;
     private String firstname;
     private String lastname;
     private Rang rang;
     private String code;
 
-    public Pilots(int id, String firstname, String lastname, Rang rang, String code) {
+    public Pilot(int id, String firstname, String lastname, Rang rang, String code) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;

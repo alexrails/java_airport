@@ -3,7 +3,7 @@ package academy.belhard.entity;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class Flights {
+public class Flight {
     private int id;
     private int airplaneId;
     private int pilotId;
@@ -11,12 +11,12 @@ public class Flights {
     private LocalTime departure_time;
     private String flight_number;
 
-    public Flights(int id, int airplaneId, int pilotId, String departure_date, String departure_time, String flight_number) {
+    public Flight(int id, int airplaneId, int pilotId, LocalDate departure_date, LocalTime departure_time, String flight_number) {
         this.id = id;
         this.airplaneId = airplaneId;
         this.pilotId = pilotId;
-        this.departure_date = LocalDate.parse(departure_date);
-        this.departure_time = LocalTime.parse(departure_time);
+        this.departure_date = departure_date;
+        this.departure_time = departure_time;
         this.flight_number = flight_number;
     }
 
@@ -56,12 +56,12 @@ public class Flights {
         this.pilotId = pilotId;
     }
 
-    public void setDeparture_date(String departure_date) {
-        this.departure_date = LocalDate.parse(departure_date);
+    public void setDeparture_date(LocalDate departure_date) {
+        this.departure_date = departure_date;
     }
 
-    public void setDeparture_time(String departure_time) {
-        this.departure_time = LocalTime.parse(departure_time);
+    public void setDeparture_time(LocalTime departure_time) {
+        this.departure_time = departure_time;
     }
 
     public void setFlight_number(String flight_number) {
