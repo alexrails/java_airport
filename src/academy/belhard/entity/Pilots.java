@@ -4,10 +4,10 @@ public class Pilots {
     private int id;
     private String firstname;
     private String lastname;
-    private String rang;
+    private Rang rang;
     private String code;
 
-    public Pilots(int id, String firstname, String lastname, String rang, String code) {
+    public Pilots(int id, String firstname, String lastname, Rang rang, String code) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
@@ -27,7 +27,7 @@ public class Pilots {
         return lastname;
     }
 
-    public String getRang() {
+    public Rang getRang() {
         return rang;
     }
 
@@ -47,7 +47,7 @@ public class Pilots {
         this.lastname = lastname;
     }
 
-    public void setRang(String rang) {
+    public void setRang(Rang rang) {
         this.rang = rang;
     }
 
