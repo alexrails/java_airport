@@ -2,6 +2,8 @@ package academy.belhard.db.writer;
 
 import academy.belhard.db.DBConnector;
 import academy.belhard.entity.Flight;
+import academy.belhard.entity.Pilot;
+import academy.belhard.util.NotifyToConsoleUtil;
 
 import java.sql.*;
 import java.util.List;

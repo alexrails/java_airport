@@ -2,6 +2,7 @@ package academy.belhard.db.writer;
 
 import academy.belhard.db.DBConnector;
 import academy.belhard.entity.Pilot;
+import academy.belhard.util.NotifyToConsoleUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,6 +15,7 @@ public class PilotDBWriter {
     public static void insert(List<Pilot> pilots) {
         for (Pilot pilot : pilots) {
             insert(pilot);
+            pilot.toString();
         }
     }
 
